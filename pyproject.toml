@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "hypothesis-sandbox"
+version = "0.1.0"
+description = ""
+authors = ["tkc"]
+readme = "README.md"
+packages = [{ include = "*", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.2.3"
+pandera = "^0.22.1"
+ruff = "^0.9.6"
+hypothesis = "^6.125.3"
+
+[tool.poetry.group.dev.dependencies]
+hypothesis = "^6.125.3"
+pytest = "^8.3.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
